@@ -1,13 +1,13 @@
 services:
   habr-bot:
-    image: habr-bot:latest
+    image: habr-article-bot:latest
     container_name: habr-bot
     environment:
       botToken: "your:telegram-token"
       notifyStartStop: "False"
       enableWhitelist: "True"
       whitelist: "[chatid]"
-      habrApiUrl: "https://habr.frik.su/api/"
+      habrApiUrl: ""
     volumes:
       - ./data:/app/data
     restart: unless-stopped
