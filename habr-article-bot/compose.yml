@@ -7,7 +7,7 @@ services:
       notifyStartStop: "False"
       enableWhitelist: "True"
       whitelist: "[chatid]"
-      habrApiUrl: ""
+      habrApiUrl: "https://habr.example.com/api"
     volumes:
       - ./data:/app/data
     restart: unless-stopped
